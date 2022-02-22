@@ -6,3 +6,6 @@ burger.addEventListener('click', function () {
 	brgMenu.classList.toggle('_visible')
 
 })
+if(burger.classList.contain('_active')){
+	document.body.style.overflov = 'hiden'
+} else { document.body.style.overflov = ''};
