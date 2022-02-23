@@ -3,9 +3,10 @@ const brgMenu = document.querySelector('.header_item')
 
 burger.addEventListener('click', function () {
 	burger.classList.toggle('_active');
-	brgMenu.classList.toggle('_visible')
-
-})
-if(burger.classList.contain('_active')){
-	document.body.style.overflov = 'hiden'
-} else { document.body.style.overflov = ''};
+	brgMenu.classList.toggle('_visible');
+	if (burger.classList.contains('_active')) {
+		document.body.style.overflow = 'hidden';
+	} else {
+		document.body.style.overflow = '';
+	};
+});
